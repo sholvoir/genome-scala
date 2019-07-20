@@ -2,7 +2,7 @@ import java.io.File
 
 import org.scalatest._
 
-import micit.genome._
+import com.micinfotech.genome._
 
 class FastaSpec extends FlatSpec with Matchers {
   "FastaOnce" should "Read the Fasta file and return the allele." in {

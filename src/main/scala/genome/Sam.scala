@@ -1,4 +1,4 @@
-package micit.genome
+package com.micinfotech.genome
 
 import java.io.{File, PrintWriter}
 
@@ -64,8 +64,8 @@ object Sam {
     * sam file splite
     * @param samfile input sam file
     */
-  def fileSplit(samfile: File) {
-    val chrfiles = ChromosomeID.values.map { chromesomeId =>
+  def fileSplit(samfile: File): Unit = {
+    val chrfiles = ChromosomeID.values.toList.map { chromesomeId =>
       val chrname = chromesomeId.toString
       val chrdir = new File(samfile.getParentFile, chrname)
       if (!chrdir.exists()) chrdir.mkdir()

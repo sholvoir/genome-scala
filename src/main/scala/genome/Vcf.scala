@@ -1,4 +1,4 @@
-package micit.genome
+package com.micinfotech.genome
 
 import java.io.File
 
